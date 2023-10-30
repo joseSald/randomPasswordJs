@@ -20,3 +20,11 @@ function createRandomPassword() {
   }
   passwordBox.value = password;
 }
+
+function copyButton() {
+  //   passwordBox.ariaSelected();
+  // document.execCommand('copy';)
+  const copy = passwordBox.value;
+  navigator.clipboard.writeText(copy);
+  console.log(passwordBox.value);
+}
